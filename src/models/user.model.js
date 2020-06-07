@@ -22,8 +22,16 @@ const userSchema = new mongoose.Schema({
     trim: true, 
     minlength: [6, 'Password must be longer than 5 charactors']
   }
+}, 
+{
+  timestamps: true
 });
 
+// userSchema.pre('save', async function(next) {
+//   const user = this;
+  
+//   next();
+// })
 
 const User = mongoose.model('User', userSchema);
 
