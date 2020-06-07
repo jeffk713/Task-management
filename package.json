@@ -4,8 +4,8 @@
   "description": "boilerplate for react and Express",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "server": "nodemon server.js",
+    "start": "env-cmd -f ./config/dev.env node src/server.js",
+    "server": "env-cmd -f ./config/dev.env nodemon src/server.js",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
@@ -13,9 +13,12 @@
   "license": "MIT",
   "dependencies": {
     "concurrently": "^5.2.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongodb": "^3.5.8",
+    "mongoose": "^5.9.18"
   },
   "devDependencies": {
+    "env-cmd": "^10.1.0",
     "nodemon": "^2.0.4"
   }
 }
