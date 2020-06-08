@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
+//const Task = require('')
 
 const userSchema = new mongoose.Schema({
   name: {
@@ -32,6 +33,12 @@ const userSchema = new mongoose.Schema({
 {
   timestamps: true
 });
+
+userSchema.virtual('tasks', {
+  ref: 'Task',
+  localField: '_id',
+  foreignField: 'owner'
+})
 
 userSchema.methods.createAuthToken = async function() {
   const user = this;
