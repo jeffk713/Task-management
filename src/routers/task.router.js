@@ -16,7 +16,7 @@ router.post('/task/create', auth, async (req, res) => {
 
 //GET ?completed=false
 //GET ?limit=10&skip=0
-//GET ?sortBy=updatedAt:asc or :desc
+//GET ?sortBy=updatedAt:1 or :-1
 router.get('/task/readall', auth, async (req, res) => {
   const match = {};
   const sort = {};
