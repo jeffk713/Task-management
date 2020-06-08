@@ -1,9 +1,10 @@
 {
-  "name": "reactexpress",
+  "name": "taskapp",
   "version": "1.0.0",
-  "description": "boilerplate for react and Express",
+  "description": "task management",
   "main": "server.js",
   "scripts": {
+    "client-install": "cd client&& npm install",
     "start": "env-cmd -f ./config/dev.env node src/server.js",
     "server": "env-cmd -f ./config/dev.env nodemon src/server.js",
     "client": "npm start --prefix client",

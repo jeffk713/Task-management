@@ -1,0 +1,19 @@
+.header-container {
+
+  h1 {
+    font-size: 400%;
+  }
+
+  .nav-bar {
+    font-size: 120%;
+    
+    display: flex;
+    justify-content: flex-end;
+
+    .link {
+      text-decoration: none;
+      color: #3f3f3f;
+      margin-right: 25px;
+    }
+  }
+}

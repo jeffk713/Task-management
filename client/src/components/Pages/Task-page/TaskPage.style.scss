@@ -1,0 +1,29 @@
+.task-page{
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+
+  .form-task {
+    display: flex;
+    justify-content: center;
+
+    .input-task {
+      width: 60%;
+      height: 30px;
+    }
+
+    .button-task {
+      width: 10%;
+    }
+  }
+  
+  .task-list-container{
+    margin: 20px auto;
+    width: 90%;
+
+    .task-list {
+      display: inline-grid;
+      grid-template-columns: 7fr 2fr 1fr
+    }
+  }
+}

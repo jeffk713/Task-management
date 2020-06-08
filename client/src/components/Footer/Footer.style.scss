@@ -1,0 +1,11 @@
+$footer-color: #3f3f3f;
+
+.footer-container {
+  width: 65%;
+  border-top: 1px solid $footer-color;
+  padding: 15px 0;
+  
+  span {
+    color: $footer-color;
+  }
+}

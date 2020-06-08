@@ -1,19 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Route } from 'react-router-dom'
 
-import Customers from './components/customers/customers';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import PageContainer from './components/Page-Container/PageContainer';
 
-import './App.css';
+import './App.scss';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
-      <Customers />
+      <Header />
+      <PageContainer />
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
